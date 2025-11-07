@@ -1,0 +1,33 @@
+{
+  "name": "mcp-mysql-server",
+  "version": "1.0.0",
+  "description": "MCP Server for MySQL Database queries",
+  "main": "build/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "build:unix": "tsc && chmod 755 build/main.js",
+    "server": "node build/main.js",
+    "test-db": "node scripts/test-db-connection.js"
+  },
+  "keywords": ["mcp", "mysql", "database", "sql"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "dotenv": "^17.2.3",
+    "mysql2": "^3.15.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.3"
+  },
+  "type": "module",
+  "bin": {
+    "mcp-mysql": "./build/main.js"
+  },
+  "files": [
+    "build"
+  ]
+}

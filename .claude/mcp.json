@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "mysql-primebd": {
+      "command": "node",
+      "args": ["./build/main.js"],
+      "env": {
+        "DB_HOST": "localhost",
+        "DB_PORT": "3306",
+        "DB_USER": "root",
+        "DB_PASSWORD": "Prime@#2006",
+        "DB_NAME": "primebd"
+      }
+    }
+  }
+}
